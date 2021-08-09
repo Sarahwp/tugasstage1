@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD ANALYTICS COVID-19</title>
+    <link rel ="stylesheet" href="style.css">
+</head>
+<body>
+
+        <header>
+            <nav>
+            <h1>DASHBOARD ANALYTICS COVID-19</h1>
+            <ul class="tabs">
+                <li class="tab active">
+                    <a data-switcher data-tab="1">Page 1</a>
+                </li>
+                <li class="tab">
+                    <a data-switcher data-tab="2">Page 2</a>
+                </li>
+            </ul>
+        </nav>
+        </header>
+
+        <main>
+        <section class="pages">
+        <!-- page 1 data indonesia dan global -->
+        <div class="page active" data-page="1">
+        <div class="container">
+        <h2 class= "datadata"> INDONESIA </h2>
+         <div class = "row">
+           <div class ="threecolumns">
+               <div class="card redcard">
+                   <div class="cardheading">
+                    <h4> Kasus </h4>
+                    <h2 id = "confirmedind"></h2>
+                   </div>
+                </div>
+           </div>
+           <div class ="threecolumns">
+            <div class="card bluecard">
+                    <h4> Sembuh </h4>
+                    <h2 id = "recoveredind"></h2>         
+            </div>
+            </div> 
+             <div class ="threecolumns">
+                <div class="card yellowcard">
+                    <h4> Meninggal </h4>
+                    <h2 id = "deathsind"></h2>
+                </div>
+            </div>
+       </div>
+ 
+    
+       <h2 class= "datadata"> DUNIA </h2>
+       <div class = "row">
+           <div class="threecolumns">
+               <div class= "card redcard">
+                   <div class="cardheading">
+                    <h4> Kasus </h4>
+                    <h2 id = "confirmedglb"></h2>
+                   </div>
+               </div>
+           </div>
+           <div class="threecolumns">
+               <div class="card bluecard">
+                <h4> Sembuh </h4>
+                <h2 id = "recoveredglb"></h2>
+               </div>
+           </div>
+           <div class="threecolumns">
+            <div class="card yellowcard">
+                <h4> Meninggal </h4>
+                <h2 id = "deathsglb"></h2>
+            </div>
+        </div>   
+       </div>
+       </div>
+    </div>
+
+      <!-- page 2 Search -->
+    <div class="page" data-page="2">
+
+        <div class= "area">
+            <input type="text" id="inputKeyword" class="searchcountry" placeholder="Search by Country's Name"> 
+            <button class="searchButton" type="button">Search</button>
+        </div>
+
+        <div id = "case-container"></div> 
+
+        <div id="case-global"></div>
+
+    </div>
+    </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
